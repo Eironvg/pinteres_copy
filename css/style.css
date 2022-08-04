@@ -1,0 +1,293 @@
+/*Barra de navegacion*/
+.navbar-pinterest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#pinterest-icon{
+    width: 28px;
+    
+}
+
+.search{
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #dee2e6;
+    width: 72%;
+    height: 48px;
+    
+}
+
+
+input{
+    border: none;
+    background-color: transparent;
+}
+.search i,input{
+    margin-left: 15px;
+    font-size: medium;
+}
+
+.menu{
+    width: 220px;
+    align-items: center;
+    border-right: 0;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+    display: flex;
+
+}
+
+.menu ul > li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+ul > li > a{
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: black;
+    color: #dee2e6;
+    padding: 5px;
+}
+
+ul > li > i{
+    display: inline;
+}
+
+
+
+#check,.checkbtn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+    .search{
+        width: 40%;
+    }
+    
+    .menu{
+        
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu label > i{
+        display: inline;
+    }
+
+    .checkbtn{
+        background-color: black;
+        border-radius: 50px;
+        padding: 9px;
+        width: 90%;
+        color: white;
+        display: inline;
+
+    }
+
+   
+    ul{
+       position: fixed;
+       display: flex;
+       flex-direction: column;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+        background-color: rgb(222, 226, 230, .5);
+        left: -100%;
+        text-align: center;
+        
+    }
+
+    #check:checked ~ ul{
+        margin-top: 15px;
+        z-index: 1;
+        left: 15%;
+    }
+    
+    ul:after{
+        z-index: 1;
+    }
+        
+    
+    }
+
+
+
+
+.crear{
+    display: flex;
+
+}
+
+.crear i{
+    margin-left: -12px;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons div{
+    margin: 2px;
+    font-size: 20px;
+    border: 12px solid transparent;
+    color: #6c757d;
+    
+}
+
+
+.icons div:hover{
+    border-radius: 50px;
+    background-color: #dee2e6;
+    padding: .5px ;
+    cursor: pointer;  
+}
+
+@media (max-width: 500px) {
+    .icons{
+        margin-right: -18px;
+    }
+    .icons div > i{
+        padding: .1px;
+        margin: -10px;
+    }
+    .search{
+        width: 35%;
+    }
+    .navbar-pinterest a > img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 390px) {
+    .icons{
+        margin-right: -18px;
+    }
+    .icons div > i{
+        padding: .1px;
+        margin: -10px;
+    }
+    .search{
+        width: 35%;
+    }
+    .navbar-pinterest a > img{
+        width: 50px;
+    }
+    
+}
+@media (max-width: 375px) {
+    .icons{
+        margin-right: -18px;
+    }
+    .icons div > i{
+        padding: .1px;
+        margin: -10px;
+    }
+    .search{
+        width: 35%;
+    }
+    .navbar-pinterest a > img{
+        width: 50px;
+    }
+}    
+
+ /*Menu de imagenes*/
+
+ .card-image img{
+    max-width: 100%;
+    border-radius: 17px;
+    cursor: pointer;
+    
+    
+ }
+
+ 
+
+
+ #content{
+    columns: 5 320px;
+    column-gap: 0.5em;
+ }
+
+ .card-image{
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+    position: relative;
+    max-width: 100%;
+    border-radius: 17px;
+    cursor: pointer;
+ }
+
+ .hover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 37, 41, .5);
+    border-radius: 15px;
+    visibility: hidden;
+    
+ }
+
+ .card-image:hover > .hover{
+    visibility: visible;
+ }
+ 
+ 
+ .perfil{
+    position: absolute;
+    margin-left: 0px;
+    color: white;
+    top: 25px;
+    left: 10px;
+ }
+ .perfil div{
+    display: inline;
+ }
+ 
+ .guardar_img{
+    position: absolute;
+    border-radius: 50px;
+    border: solid  transparent;
+    padding: 10px;
+    background-color: #ef233c;
+    right: 5px;
+    top: 10px;
+    color: white;
+    
+ }
+
+ .fa-ellipsis, .fa-arrow-up-from-bracket{
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(222, 226, 230, .8);
+    padding: 5px;
+    font-size: 23px;
+ }
+ .fa-ellipsis{
+    bottom: 10px;
+    right: 5px;
+ }
+ 
+ .fa-arrow-up-from-bracket{
+    bottom: 10px;
+    right: 45px;
+
+ }
+ 
+ 
